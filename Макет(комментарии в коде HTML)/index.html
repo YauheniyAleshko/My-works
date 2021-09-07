@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--Верстка макета в том числе адаптивная  по контрольным точкам: 1440, 1024, 768, 425, 375, 320.Выпадающее меню реализовано на чистом html и css,понимаю что такие вещи пишутся на яваскрипт с помощью обработчика событий,но на момент верстки макета таковыми знаниями еще не владел.Примерно тоже могу сказать о названии классов,в настоящее время стараюсь придерживаться и использовать методологию БЭМ.-->
+</head>
+<body>
+
+<div class="site">
+
+    <header class="header">
+        <div class="container">
+            
+            <div class="cap">
+                <div class="logo"><a href="#"><img src="images/logo-head.png" alt="logo company"></a></div>
+                <nav class="nav">
+                    <button class = "nav_toggle"><label for ="nav_toggle"></label></button>
+                    <input type = "checkbox" id = "nav_toggle">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class = "wrapper">
+                <div class="content">
+                    <p>Welcome To Our Studio!</p>
+                    <h1>Its nice to meet you</h1>
+                    <button class="button_cell">Tell me more</button>
+                </div>
+            </div>
+        </div> 
+    </header>
+
+        
+    <section class="section service">
+        <div class="container">
+
+            <h2>Services</h2>
+
+            <p>Proin iaculis purus consequat sem cure. </p>
+                
+            <div class="services_list">
+                <div class="services_item">
+                    <div class="service_img">
+                        <img src="images/icon-basket.png">
+                    </div>
+                    <h3>E-Commerce</h3>
+                    <p>Proin iaculis purus consequat sem cure 
+                       digni ssim. Donec porttitora entum suscipit 
+                       aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+                <div class="services_item">
+                    <div class="service_img">
+                        <img src="images/icon-laptop.png">
+                    </div>
+                    <h3>Responsive Web</h3>
+                    <p>Proin iaculis purus consequat sem cure 
+                       digni ssim. Donec porttitora entum suscipit 
+                       aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+                <div class="services_item">
+                    <div class="service_img">
+                        <img src="images/icon-locked.png">
+                    </div>
+                    <h3>Web Security</h3>
+                    <p>Proin iaculis purus consequat sem cure 
+                       digni ssim. Donec porttitora entum suscipit 
+                       aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        
+    <section class="section portfolio">
+        <div class="container">
+
+            <h2>Our Portfolio</h2>
+            <p>Proin iaculis purus consequat sem cure. </p>
+                
+            <div class="portfolio_list">
+                <div class="portfolio_item">
+                    <div class="thumb">
+                        <img src="images/Image1.png" alt="#">
+                    </div>
+                    <div class="title"><a href="#">Ebony &amp; Ivory</a><span class="caotion">Branding</span></div>
+                </div>
+                
+                <div class="portfolio_item">
+                    <div class="thumb">
+                        <img src="images/Image2.png" alt="#">
+                    </div>
+                    <div class="title"><a href="#">Smart Stationary</a><span class="caotion">Print Design</span></div>
+                </div>
+                
+                <div class="portfolio_item">
+                    <div class="thumb">
+                        <img src="images/Image3.png" alt="#">
+                    </div>
+                    <div class="title"><a href="#">Clever Poster</a><span class="caotion">Print Design</span></div>
+                </div>
+    
+                <div class="portfolio_item">
+                    <div class="thumb">
+                        <img src="images/Image4.png" alt="#">
+                    </div>
+                    <div class="title"><a href="#">Vinyl Record</a><span class="caotion">Produkt Mosk-Up</span></div>
+                </div>
+                
+                <div class="portfolio_item">
+                    <div class="thumb">
+                        <img src="images/Image5.png" alt="#">
+                    </div>
+                    <div class="title"><a href="#">Threehouse Template</a><span class="caotion">Web Disign</span></div>
+                </div>
+                
+                <div class="portfolio_item">
+                    <div class="thumb">
+                        <img src="images/Image6.png" alt="#">
+                    </div>
+                    <div class="title"><a href="#">Burned Logo</a><span class="caotion">Branding</span></div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+        
+    <section class="section about">
+        <div class="container">
+            
+            <h2>About Us</h2>
+            <p>Proin iaculis purus consequat sem cure. </p>
+            
+            <div class="about_items">
+                <div class="about_img right">
+                    <img class = "correct" src="images/Image_column1.png" alt="#">
+                    <div class="about_content">
+                        <h4>July 2010</h4>
+                        <p class="text">Our Humble Beginnings</p>
+                        <span>Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni 
+                            ssim. Donec porttitora entum suscipit.</span>
+                    </div>
+                </div>
+                
+                <div class="about_img left">
+                    <img src="images/Image_column2.png" alt="#">
+                    <div class="about_content">
+                        <h4>Junuary 2011</h4>
+                        <p class="text">Facing Startup Buttles</p>
+                        <span>Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni 
+                            ssim. Donec porttitora entum suscipit aenean 
+                            rhoncus posuere odio in tincidunt.</span>
+                    </div>
+                </div>
+                
+                <div class="about_img right">
+                    <img src="images/Image_column3.png" alt="#">
+                    <div class="about_content">
+                        <h4>December 2012</h4>
+                        <p class="text">Enter The Dark Days</p>
+                        <span>Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni.</span>
+                    </div>
+                </div>
+                
+                <div class="about_img left">
+                    <img class = "correct" src="images/Image_column4.png" alt="#">
+                    <div class="about_content">
+                        <h4>February 2014</h4>
+                        <p class="text">Our Triumph</p>
+                        <span>Proin iaculis purus consequat sem cure 
+                            digni ssim. Donec porttitora entum suscipit 
+                            aenean rhoncus posuere odio in tincidunt. Proin 
+                            iaculis purus consequat sem cure digni 
+                            ssim. Donec porttitora entum suscipit aenean.</span>
+                    </div>
+                </div>
+                
+                <div class="about_bot">
+                     <p>Our<br> Story<br> Continues<br> ...</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section team">
+        <div class="container">
+            <h2>Our amazing team</h2>
+            <p>Proin iaculis purus consequat sem cure.</p>
+            
+            <div class="stuff_list">
+                <div class="stuff_item">
+                    <div class="group">
+                        <img src="images/foto.png" alt="foto">
+                        <div class="sign"><h5>Kimberly Thompson</h5><span>Marketer</span></div>
+                        <div class="group_icon">
+                            <a href="#"><img src="images/tw.png" alt="#"></a>
+                            <a href="#"><img src="images/fc.png" alt="#"></a>
+                            <a href="#"><img src="images/pinta.png" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stuff_item">
+                    <div class="group">
+                        <img src="images/foto.png" alt="foto">
+                        <div class="sign"><h5>Rico Massimo</h5><span>Coder</span></div>
+                        <div class="group_icon">
+                        <a href="#"><img src="images/tw.png" alt="#"></a>
+                            <a href="#"><img src="images/fc.png" alt="#"></a>
+                            <a href="#"><img src="images/google.png" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stuff_item">
+                    <div class="group">
+                        <img src="images/foto.png" alt="foto">
+                        <div class="sign"><h5>Uku Mason</h5><span>Graphic Designer</span></div>
+                       <div class="group_icon">
+                            <a href="#"><img src="images/fc.png" alt="#"></a>
+                            <a href="#"><img src="images/pinta.png" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                
+                <div class="team_p">
+                    <p>Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit<br>  
+                    aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+                </div>
+                
+        </div>
+    </section>
+
+        
+    <section class="logotypes">
+        <div class="container">
+            <div class="logotypes__images">
+                <img src="images/envato.png" alt="#">
+                <img src="images/wordpress.png" alt="#">
+                <img src="images/tuts.png" alt="#">
+                <img src="images/microlancer.png" alt="#">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section contact">
+       <div class="container">
+            <h2>Contact Us</h2>
+            <p>Proin iaculis purus consequat sem cure.</p>
+            <form method="POST">
+                <div class="form1">
+                    <div class="field">
+                        <input placeholder="Your Name*" type="text" name="firstname">
+                    </div>
+
+                    <div class="field">
+                        <input placeholder="Your E-mail*" type="email" name="email">
+                    </div>
+
+                    <div class="field">
+                        <input placeholder="Subgect" type="text" name="subgect">
+                    </div>
+                </div>
+
+                <div class="form2">
+                    <div class="your_mes">
+                        <textarea name="message" placeholder="Your Message*"></textarea>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class="button_cell">Send message</button>
+                </div>
+               
+            </form>
+        </div>
+    </section>
+
+        
+    <footer class="footer">
+        <div class="container">
+            <div class="bunch">
+              <div class="item__foot1">
+                    <p>©Copyright2014FreebiesXpress.com</p>
+                </div>
+
+                <div class="item__foot2">
+                    <a href="#"><img src="images/Twitterfoot.png" alt="#"></a>
+                    <a href="#"><img src="images/Facebookfoot.png" alt="#"></a>
+                    <a href="#"><img src="images/Pinterestfoot.png" alt="#"></a>
+                    <a href="#"><img src="images/Googlefoot.png" alt="#"></a>
+
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
